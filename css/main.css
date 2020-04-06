@@ -1,0 +1,84 @@
+body {
+    background-color: darkblue;
+}
+.score-board {
+    display: inline-block;
+    width: 70%;
+    background-color: aqua;
+    margin: 50px 15%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+    .icon {
+            display: inline-block;
+               
+
+    }
+    .icon > img {
+        display: inline-block;
+        height: 70px;
+    }
+    .score {
+        display: inline-block;
+        float: right;
+        height: 70px;
+        background-color: white;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+.game {
+    display: inline-block;
+    width: 300px;
+    margin: 100px calc( 50vw - 150px);
+
+    text-align: center;
+
+}
+.trikampis {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    
+}
+.apvalumas {
+    background-color: white;
+    height: 100px;
+    padding: 25px;
+    border-radius: 50%;
+    position: absolute;
+  
+    
+    
+}
+
+.paper {
+    top:  -50px ;
+    right: -50px;
+    border: 10px solid red;
+
+}
+.rock {
+    top: -50px ;
+    left: -50px;
+    border: 10px solid blue;
+
+}
+.sissors{
+    bottom: -50px ;
+    left: calc( 50% - 50px);
+    border: 10px solid green;
+
+}
+.rules {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
