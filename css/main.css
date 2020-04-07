@@ -82,3 +82,45 @@ body {
     color: white;
     font-weight: bold;
 }
+.kova1 {
+    float: left;
+    width: 50%;
+    
+}
+ .kova1 >p {
+     text-align: center;
+    
+ }
+ .tavoPasirinkimas > img {
+    background-color: white;
+    width: 70%;
+    padding: 25px;
+    height: auto;
+    border-radius: 50%;
+    margin: 30px 15%;
+    
+
+ }
+.kova2 {
+    float: right;
+    width: 50%;
+}
+.kovosApk {
+    position: static;
+    float: left;
+}
+.kompoPasirinkimas > img {
+    width: 70%;
+    cursor: pointer;
+    
+
+}
+.kompCss {
+    position: static;
+    background-color: white;
+    width: 70%;
+    padding: 25px;
+    height: auto;
+    border-radius: 50%;
+    margin: 30px 15%;
+}
