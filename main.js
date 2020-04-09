@@ -37,7 +37,9 @@ for(let i = 0; i < ChoiseArray.length; i++) {
         </div>
     </div>`
         document.querySelector('.game').innerHTML = HTML;
-        ;
+        document.querySelector('.game').style.width = '300px' ;
+        document.querySelector('.game').style.margin = "100px calc( 50vw - 150px)" ;
+        restart();
         })
         }, {once : true}
         )
