@@ -49,6 +49,16 @@ for(let i = 0; i < ChoiseArray.length; i++) {
 
 }
 
+document.querySelector(".rules").addEventListener("click", function(){
+    document.querySelector('.pop-rules').classList.add('active');
+    document.querySelector('.overlay').classList.add('active');
+
+})
+document.querySelector(".close-btn").addEventListener("click", function(){
+    document.querySelector('.pop-rules').classList.remove('active');
+    document.querySelector('.overlay').classList.remove('active');
+})
+
 function restart() {
     game();
 }

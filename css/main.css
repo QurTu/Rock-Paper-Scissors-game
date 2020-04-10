@@ -57,21 +57,24 @@ body {
 }
 
 .paper {
-    top:  -75px ;
-    right: -75px;
-    border: 10px solid red;
-
-}
-.rock {
     top: -75px ;
     left: -75px;
     border: 10px solid blue;
 
 }
-.scissors{
+.rock {
+
     bottom: -75px ;
     left: calc( 50% - 75px);
     border: 10px solid green;
+    
+
+}
+.scissors{
+    top:  -75px ;
+    right: -75px;
+    border: 10px solid red;
+
 
 }
 .rules {
@@ -140,4 +143,71 @@ body {
  .result-style {
      padding-top: 20px;
      font-size: 36px;
+}
+
+.pop-rules {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: solid red 1px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    z-index: 10;  
+    transform: 200ms ease-in-out;
+}
+.pop-rules.active {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+.active {
+
+}
+.pop-head > h1 {
+    
+    padding: 10px 15px;padding: 10px 15px;
+    float: left;
+    width: 90%;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 40px;
+    padding-left: 5%;
+    
+}
+.close-btn {
+    float: right;
+    width: 10%;
+    font-size: 100% ;
+    font-size: 50px;
+    text-align: center;
+    background-color: wheat;
+    cursor: pointer;
+    
+
+}
+.rules-img {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+}
+.overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    pointer-events: none;
+    transform: 200ms ease-in-out;
+
+}
+.overlay.active {
+    opacity: 0.5;
+    pointer-events: all;
+
 }
