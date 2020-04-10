@@ -33,7 +33,7 @@ for(let i = 0; i < ChoiseArray.length; i++) {
         <div>
         <img id = "p-paper" class="apvalumas paper" src="./images/icon-paper.svg" alt="">
         <img id = "p-rock" class="apvalumas rock" src="./images/icon-rock.svg" alt="">
-        <img id = "p-sissors" class="apvalumas sissors" src="./images/icon-scissors.svg" alt="">
+        <img id = "p-sissors" class="apvalumas scissors" src="./images/icon-scissors.svg" alt="">
         </div>
     </div>`
         document.querySelector('.game').innerHTML = HTML;
@@ -88,7 +88,7 @@ function kasLaimejo( x , y) {
 }
 function finalRender( laimetojas ) {
 if(laimetojas === 0 ) {
-    return document.querySelector('.game').insertAdjacentHTML( "beforeend", `<div> Lygiosios </div> <div class = "play-agan"> Play agan! </div>`);
+    return document.querySelector('.game').insertAdjacentHTML( "beforeend", `<div class = result-style> DRAWN GAME! </div> <div class = "play-agan"> Play agan! </div>`);
 }
 if(laimetojas === 1 ) {
     let ka = document.querySelector(".score-number").innerHTML ;
@@ -98,14 +98,14 @@ if(laimetojas === 1 ) {
 
     console.log(document.querySelector(".score-number").innerHTML);
 
-return document.querySelector('.game').insertAdjacentHTML( "beforeend", `<div> LAIMEJAI </div> <div class = "play-agan"> Play agan! </div>`);
+return document.querySelector('.game').insertAdjacentHTML( "beforeend", `<div class = result-style> YOU WIN! </div> <div class = "play-agan"> Play agan! </div>`);
 }
 if(laimetojas === -1 ) {
     let ka = document.querySelector(".score-number").innerHTML ;
     let na = parseInt(ka) - 1 ; 
     document.querySelector(".score-number").innerHTML = na;
     console.log(document.querySelector(".score-number").innerHTML);
-return document.querySelector('.game').insertAdjacentHTML( "beforeend", `<div> PRALOSEI </div> <div class = "play-agan"> Play agan! </div>`);
+return document.querySelector('.game').insertAdjacentHTML( "beforeend", `<div class = result-style> YOU LOSE! </div> <div class = "play-agan"> Play agan! </div>`);
 }
 
 }

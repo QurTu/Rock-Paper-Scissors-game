@@ -1,10 +1,11 @@
 body {
-    background-color: darkblue;
+    background-image: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
 }
+     
 .score-board {
     display: inline-block;
     width: 70%;
-    background-color: aqua;
+   
     margin: 50px 15%;
     padding: 10px 20px;
     border-radius: 10px;
@@ -31,10 +32,11 @@ body {
 
 .game {
     display: inline-block;
-    width: 300px;
-    margin: 100px calc( 50vw - 150px);
-
+    width: 400px;
+    margin: 100px calc( 50vw - 200px);
     text-align: center;
+    color: white;
+    font-weight: bold;
 
 }
 .trikampis {
@@ -45,7 +47,7 @@ body {
 }
 .apvalumas {
     background-color: white;
-    height: 100px;
+    height: 150px;
     padding: 25px;
     border-radius: 50%;
     position: absolute;
@@ -55,20 +57,20 @@ body {
 }
 
 .paper {
-    top:  -50px ;
-    right: -50px;
+    top:  -75px ;
+    right: -75px;
     border: 10px solid red;
 
 }
 .rock {
-    top: -50px ;
-    left: -50px;
+    top: -75px ;
+    left: -75px;
     border: 10px solid blue;
 
 }
-.sissors{
-    bottom: -50px ;
-    left: calc( 50% - 50px);
+.scissors{
+    bottom: -75px ;
+    left: calc( 50% - 75px);
     border: 10px solid green;
 
 }
@@ -84,7 +86,7 @@ body {
 }
 .kova1 {
     float: left;
-    width: 50%;
+    width: 35%;
     
 }
  .kova1 >p {
@@ -103,7 +105,7 @@ body {
  }
 .kova2 {
     float: right;
-    width: 50%;
+    width: 35%;
 }
 .kovosApk {
     position: static;
@@ -112,6 +114,7 @@ body {
 .kompoPasirinkimas > img {
     width: 70%;
     cursor: pointer;
+    margin: 30px 15%;
     
 
 }
@@ -123,4 +126,18 @@ body {
     height: auto;
     border-radius: 50%;
     margin: 30px 15%;
+}
+
+.play-agan {
+    display: inline-block;
+    margin-top: 85px;
+    padding: 10px 30px;
+    color:red ;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+ .result-style {
+     padding-top: 20px;
+     font-size: 36px;
 }
