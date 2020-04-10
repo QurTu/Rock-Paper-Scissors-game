@@ -44,7 +44,7 @@ for(let i = 0; i < ChoiseArray.length; i++) {
         }, {once : true}
         )
         
-        })
+        }, {once : true})
 }
 
 }
