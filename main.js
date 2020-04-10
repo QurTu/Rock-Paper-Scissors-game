@@ -87,7 +87,7 @@ function kasLaimejo( x , y) {
         case "p-rock" :
             if( y === "paper") return -1;
             if( y === "rock") return 0;
-            if( y === "scissors") return -1;
+            if( y === "scissors") return 1;
             break;
         case "p-sissors":
             if( y === "paper") return 1;
